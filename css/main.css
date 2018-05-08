@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 0), rgb(65, 64, 64));
+}
+
+#clock {
+    color: rgba(110, 110, 110, 0.219);
+    width: 100vw;
+    padding: auto;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 20vw;
+    z-index: -1;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.analog-clock {
+    width: 100vw;
+    height: 140px;
+    padding-top: 40vh;
+    z-index: 99;
+}
+
+#clock-face {
+    stroke: rgb(80, 79, 79);
+    stroke-width: 3px;
+    fill: rgba(255, 255, 255, 0.315); 
+}
+
+#h-hand, #m-hand, #s-hand, #s-tail {
+    stroke: rgb(46, 46, 46);
+    stroke-linecap: round;
+    
+}
+
+#h-hand {
+    stroke-width: 3px;
+}
+#m-hand {
+    stroke-width: 2px;
+}
+#s-hand {
+    stroke-width: 1px;
+}
+
+.time-text {
+    text-align: center;
+}
